@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Design Approval Workflow - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">Fashion Design <span>Approval Workflow</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Dashboard</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="sketches.html">Sketches</a></li>
+                    <li><a href="fabrics.html">Fabrics</a></li>
+                    <li><a href="revisions.html">Revisions</a></li>
+                    <li><a href="comments.html">Comments</a></li>
+                    <li><a href="approvals.html">Approvals</a></li>
+                    <li><a href="version-history.html">Version History</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Dashboard</h1>
+        <p style="color: #666; margin-bottom: 30px;">Welcome to the Fashion Design Approval Workflow system. Manage your designs, track revisions, and streamline approvals.</p>
+
+        <!-- Statistics Cards -->
+        <section>
+            <h2 class="section-title">Overview</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Projects</h3>
+                    <div class="number">12</div>
+                </div>
+                <div class="stat-card pending">
+                    <h3>Pending Approvals</h3>
+                    <div class="number">5</div>
+                </div>
+                <div class="stat-card active">
+                    <h3>Active Revisions</h3>
+                    <div class="number">8</div>
+                </div>
+                <div class="stat-card approved">
+                    <h3>Approved Designs</h3>
+                    <div class="number">24</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Projects -->
+        <section>
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h3>Summer Collection 2026</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-info">
+                            <p><strong>Client:</strong> Fashion House Ltd.</p>
+                            <p><strong>Designer:</strong> Sarah Mitchell</p>
+                            <p><strong>Last Updated:</strong> 15/10/2026</p>
+                            <p><strong>Status:</strong> <span class="status-badge status-in-progress">In Progress</span></p>
+                        </div>
+                        <a href="project-details.html" class="btn">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h3>Traditional Wear Collection</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-info">
+                            <p><strong>Client:</strong> Heritage Textiles</p>
+                            <p><strong>Designer:</strong> Rajesh Kumar</p>
+                            <p><strong>Last Updated:</strong> 12/10/2026</p>
+                            <p><strong>Status:</strong> <span class="status-badge status-pending">Pending Review</span></p>
+                        </div>
+                        <a href="project-details.html" class="btn">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h3>Modern Casual Collection</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-info">
+                            <p><strong>Client:</strong> Urban Style Co.</p>
+                            <p><strong>Designer:</strong> Emily Chen</p>
+                            <p><strong>Last Updated:</strong> 10/10/2026</p>
+                            <p><strong>Status:</strong> <span class="status-badge status-approved">Approved</span></p>
+                        </div>
+                        <a href="project-details.html" class="btn">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h3>Evening Wear Collection</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-info">
+                            <p><strong>Client:</strong> Gala Events Inc.</p>
+                            <p><strong>Designer:</strong> Michael Torres</p>
+                            <p><strong>Last Updated:</strong> 08/10/2026</p>
+                            <p><strong>Status:</strong> <span class="status-badge status-revision">Revision Needed</span></p>
+                        </div>
+                        <a href="project-details.html" class="btn">View Project</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section>
+            <h2 class="section-title">Recent Activity</h2>
+            <div class="card">
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <div style="padding: 15px; background: #f9f9f9; border-radius: 6px; border-left: 4px solid var(--violet);">
+                        <p style="margin: 0; color: #333;"><strong>Sarah Mitchell</strong> submitted <strong>Summer Collection 2026</strong> for client review</p>
+                        <small style="color: #888;">2 hours ago</small>
+                    </div>
+                    <div style="padding: 15px; background: #f9f9f9; border-radius: 6px; border-left: 4px solid var(--light-green);">
+                        <p style="margin: 0; color: #333;"><strong>Client (Fashion House Ltd.)</strong> approved <strong>Modern Casual Collection</strong></p>
+                        <small style="color: #888;">5 hours ago</small>
+                    </div>
+                    <div style="padding: 15px; background: #f9f9f9; border-radius: 6px; border-left: 4px solid #ffa500;">
+                        <p style="margin: 0; color: #333;"><strong>Michael Torres</strong> requested revision on <strong>Evening Wear Collection</strong> - sleeve length adjustment</p>
+                        <small style="color: #888;">1 day ago</small>
+                    </div>
+                    <div style="padding: 15px; background: #f9f9f9; border-radius: 6px; border-left: 4px solid var(--sky-blue);">
+                        <p style="margin: 0; color: #333;"><strong>Rajesh Kumar</strong> updated fabric selection for <strong>Traditional Wear Collection</strong> - switched to Silk</p>
+                        <small style="color: #888;">2 days ago</small>
+                    </div>
+                    <div style="padding: 15px; background: #f9f9f9; border-radius: 6px; border-left: 4px solid var(--violet);">
+                        <p style="margin: 0; color: #333;"><strong>Emily Chen</strong> created new sketch version 3 for <strong>Modern Casual Collection</strong></p>
+                        <small style="color: #888;">3 days ago</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Fashion Design Approval Workflow. All rights reserved.</p>
+    </footer>
+</body>
+</html>
