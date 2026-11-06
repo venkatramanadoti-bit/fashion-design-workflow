@@ -1,0 +1,411 @@
+﻿
+/* ==================================
+   FASHIONFLOW WEBSITE
+   BASIC CSS DESIGN
+================================== */
+
+
+/* COMMON SETTINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    background: #FAF9F6;
+    color: #292735;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* LEFT SIDEBAR */
+
+.sidebar {
+    width: 245px;
+    min-height: 100vh;
+    padding: 25px 16px;
+    background: #FFFFFF;
+    border-right: 1px solid #EADFE8;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    flex-shrink: 0;
+}
+
+
+/* WEBSITE LOGO */
+
+.logo {
+    margin-bottom: 24px;
+}
+
+.logo h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    margin: 0;
+}
+
+.logo small {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #929292;
+    margin-top: 5px;
+}
+
+
+/* SMALL HEADINGS */
+
+.label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #999999;
+}
+
+
+/* SIDEBAR BUTTONS */
+
+.nav-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    color: #555555;
+    text-align: left;
+    font: inherit;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background: #FCE7F3;
+    color: #292735;
+}
+
+.nav-button.active {
+    background: #FCE7F3;
+    color: #292735;
+}
+
+
+/* PROFILE SECTION */
+
+.profile {
+    margin-top: auto;
+    border-top: 1px solid #EEEEEE;
+    padding-top: 18px;
+    font-size: 13px;
+}
+
+.profile small {
+    display: block;
+    color: #999999;
+    margin-top: 5px;
+}
+
+
+/* MAIN CONTENT */
+
+.main {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 30px 4%;
+}
+
+
+/* TOP HEADER */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    margin: 6px 0;
+}
+
+
+/* SAVED STATUS */
+
+.saved {
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    border-radius: 25px;
+    padding: 9px 13px;
+    font-size: 11px;
+    color: #777777;
+}
+
+
+/* CONTENT GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(190px, 1fr)
+    );
+    gap: 16px;
+}
+
+
+/* NORMAL CARDS */
+
+.card {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 5px 18px rgba(50, 35, 55, 0.05);
+    margin-bottom: 16px;
+}
+
+.card h2 {
+    font-size: 18px;
+}
+
+.card h3 {
+    font-size: 15px;
+}
+
+
+/* DASHBOARD WELCOME CARD - PINK */
+
+.welcome-card {
+    background: #FCE0EE;
+    border: 1px solid #F7C8DF;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+
+/* FABRIC PAGE - BLUE */
+
+#content[data-page="fabrics"] {
+    background: #E8F2FF;
+    padding: 18px;
+    border-radius: 18px;
+}
+
+.fabric {
+    background: #FFFFFF;
+}
+
+
+/* APPROVAL PAGE - YELLOW */
+
+#content[data-page="approvals"] .approval-card {
+    background: #FFF3CE;
+    border: 1px solid #F5E2A7;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+
+/* AI AND SETTINGS CARDS */
+
+#content[data-page="ai"] .card,
+#content[data-page="settings"] .card {
+    background: #FFFFFF;
+}
+
+
+/* STATISTICS */
+
+.stat {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+
+/* TEXT */
+
+.muted {
+    color: #888888;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* BUTTONS */
+
+.button {
+    background: #A56B91;
+    color: #FFFFFF;
+    border: none;
+    padding: 11px 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    font: 500 13px "DM Sans";
+}
+
+.button:hover {
+    background: #8F5579;
+}
+
+
+/* LIGHT BUTTON */
+
+.button.light {
+    background: #F0EAF0;
+    color: #333333;
+}
+
+.button.light:hover {
+    background: #E5DCE5;
+}
+
+
+/* ROW */
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+/* INPUT FIELDS */
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E2D9E2;
+    border-radius: 8px;
+    margin: 8px 0 16px;
+    font: inherit;
+    background: #FFFFFF;
+    color: #292735;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #A56B91;
+}
+
+
+/* FABRIC IMAGES */
+
+.fabric img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.fabric h3 {
+    margin-bottom: 5px;
+}
+
+.fabric button {
+    margin-top: 12px;
+}
+
+
+/* TAGS */
+
+.tag {
+    background: #F0EAF0;
+    border-radius: 25px;
+    padding: 7px 12px;
+    font-size: 11px;
+}
+
+
+/* EMPTY MESSAGE */
+
+.empty {
+    padding: 30px;
+    color: #888888;
+    text-align: center;
+}
+
+
+/* AI CHAT AREA */
+
+.chat {
+    white-space: pre-wrap;
+    min-height: 100px;
+    color: #555555;
+    padding: 12px 0;
+}
+
+
+/* IMAGE PREVIEW */
+
+.preview {
+    max-width: 240px;
+    border-radius: 9px;
+    margin-top: 12px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    padding: 30px 0;
+    color: #AAAAAA;
+    font-size: 11px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        width: 65px;
+        padding: 12px 5px;
+    }
+
+    .logo h2 {
+        font-size: 0;
+    }
+
+    .logo small,
+    .sidebar .label,
+    .profile {
+        display: none;
+    }
+
+    .nav-button {
+        font-size: 0;
+        text-align: center;
+        padding: 14px 3px;
+    }
+
+    .nav-button:first-letter {
+        font-size: 17px;
+    }
+
+    .main {
+        padding: 18px 12px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(
+            2,
+            minmax(0, 1fr)
+        );
+    }
+
+    .fabric img {
+        height: 120px;
+    }
+
+}

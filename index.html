@@ -1,0 +1,110 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FashionFlow Studio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LEFT NAVIGATION BAR -->
+    <div class="sidebar">
+
+        <div class="logo">
+            <h2>FashionFlow</h2>
+            <small>DESIGN STUDIO</small>
+        </div>
+
+        <p class="label">WORKSPACE</p>
+
+        <button class="nav-button active" data-page="dashboard">
+            ⌂ Dashboard
+        </button>
+
+        <button class="nav-button" data-page="projects">
+            ▧ My Projects
+        </button>
+
+        <button class="nav-button" data-page="workspace">
+            ✎ Design Workspace
+        </button>
+
+        <button class="nav-button" data-page="fabrics">
+            ▦ Fabric Library
+        </button>
+
+        <button class="nav-button" data-page="approvals">
+            ✓ Approval Center
+        </button>
+
+        <button class="nav-button" data-page="versions">
+            ◷ Version History
+        </button>
+
+        <p class="label">AI TOOLS</p>
+
+        <button class="nav-button" data-page="ai">
+            ✧ AI Assistant
+        </button>
+
+        <button class="nav-button" data-page="settings">
+            ⚙ Settings / API Connect
+        </button>
+
+        <div class="profile">
+            Personal Workspace
+            <small>FashionFlow Studio</small>
+        </div>
+
+    </div>
+
+
+    <!-- MAIN WEBSITE AREA -->
+    <div class="main">
+
+        <!-- TOP HEADER -->
+        <div class="topbar">
+
+            <div>
+                <span class="label">YOUR CREATIVE WORKSPACE</span>
+                <h1 id="heading">Dashboard</h1>
+            </div>
+
+            <div class="saved">
+                ● Saved locally
+            </div>
+
+        </div>
+
+
+        <!-- MIDDLE CONTENT -->
+        <div id="content">
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="footer">
+            FashionFlow Studio · Fashion Design Approval Workflow
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+
+</body>
+</html>
